@@ -1,0 +1,697 @@
+{
+  "executiveSummary": "The user archetypes display a strong contrast between granular, data-driven optimization (e.g., HRV, sleep correlation) and mindful, low-impact tracking that avoids anxiety. While direct usability testing responses are sparse, the conceptual goals of the 15 personas suggest a high demand for customizability, passive tracking, and visual aesthetic sharing.",
+  "overallAdoptionScore": 62,
+  "overallValidationReasoning": "The moderate overall score reflects high alignment with target goals across multiple archetypes, balanced by potential churn risks if dashboard configurations are too rigid. Users with mindfulness goals explicitly demand the ability to hide anxiety-inducing metrics like calories, while data-oriented users demand deep, automated biometric analysis.",
+  "adoptionBreakdown": {
+    "definitelyYes": 15,
+    "probablyYes": 45,
+    "unsure": 25,
+    "probablyNo": 10,
+    "definitelyNo": 5
+  },
+  "themes": [
+    {
+      "name": "Biometric & Recovery Correlation",
+      "frequency": "High",
+      "affectedSegments": [
+        "Data Analyst",
+        "Optimizer"
+      ],
+      "evidence": "Zoe Kowalski wants to 'correlate daily workout intensity with sleep recovery scores' and Marcus Vance wants to 'correlate sleep quality with workout performance'. Alex in the chat log also noted 'analyzing my HRV and sleep data from last night against my focus scores'.",
+      "confidence": "High"
+    },
+    {
+      "name": "Aesthetic Visuals & Social Sharing",
+      "frequency": "Medium",
+      "affectedSegments": [
+        "Aesthetic Tracker",
+        "Gamified Competitor",
+        "Trend Follower",
+        "Aesthetic Motivated"
+      ],
+      "evidence": "Chloe Chen wants to 'find visually aesthetic workout summaries to share on Instagram' and Liam Chen wants to track progress through 'clean, shareable infographics'.",
+      "confidence": "High"
+    },
+    {
+      "name": "Anxiety-Free & Customizable Metric Tracking",
+      "frequency": "Medium",
+      "affectedSegments": [
+        "Mindful Minimalist",
+        "Mindful Pragmatist"
+      ],
+      "evidence": "Sienna Brooks goals include 'customize dashboard to hide weight and calorie metrics' and Chloe Patel wants to track activity 'without triggering anxiety'.",
+      "confidence": "High"
+    }
+  ],
+  "sentiment": {
+    "positive": 30,
+    "neutral": 60,
+    "negative": 5,
+    "mixed": 5
+  },
+  "personaQuotes": [
+    {
+      "personaName": "Alex (p-1-1715000001)",
+      "personaRole": "Tech Worker / Biometric Optimizer",
+      "quote": "Right now, I'm just analyzing my HRV and sleep data from last night against my focus scores today to see how my afternoon energy is holding up.",
+      "relatedTheme": "Biometric & Recovery Correlation"
+    }
+  ],
+  "agreements": [
+    {
+      "pattern": "Desire for automated tracking and zero-friction entry",
+      "percentage": 80,
+      "evidence": "Mateo Silva aims to log metrics 'in under two minutes daily', Amara Adebayo seeks to 'automate activity and sleep tracking without manual logs', and Jordan Taylor wants to navigate 'easily without needing a tutorial video'."
+    }
+  ],
+  "disagreements": [
+    {
+      "pattern": "Visibility and emphasis of Caloric/Weight metrics",
+      "groups": [
+        "Gamified Competitors vs. Mindful Minimalists"
+      ],
+      "evidence": "Liam O'Connor seeks to compete in 'calorie challenges' and share them, whereas Sienna Brooks and Chloe Patel explicitly require tracking options that 'hide weight and calorie metrics' to prevent anxiety."
+    }
+  ],
+  "behavioralTrends": [
+    {
+      "trend": "Prioritizing recovery status and readiness over pure workout volume",
+      "evidence": "Multiple personas (Zoe Kowalski, Mateo Silva, Marcus Vance) prioritize recovery scores, HRV trends, and sleep correlation over raw movement totals."
+    },
+    {
+      "trend": "Integrating workout utility with personal media and schedules",
+      "evidence": "Jordan Kim and Liam Chen seek background playlist integration, while Mateo Silva demands Google Calendar sync."
+    }
+  ],
+  "segmentScoring": [
+    {
+      "segmentName": "Optimizers & Data Analysts",
+      "score": 85
+    },
+    {
+      "segmentName": "Mindful & Rehab Trackers",
+      "score": 60
+    },
+    {
+      "segmentName": "Aesthetic & Social Sharers",
+      "score": 75
+    },
+    {
+      "segmentName": "Hesitant Beginners",
+      "score": 45
+    }
+  ],
+  "personaScoring": [
+    {
+      "personaId": "p-2-1712010102",
+      "personaName": "Marcus Vance",
+      "score": 90,
+      "wouldUse": "Definitely Yes",
+      "reasoning": "Marcus demands granular data, HRV tracking, and trend analysis which aligns perfectly with core features validated by top-tier user chats.",
+      "evidence": "Goals: 'Monitor heart rate zones in real-time', 'Analyze long-term fitness trends with granular data'."
+    },
+    {
+      "personaId": "p-4-1712010104",
+      "personaName": "Sienna Brooks",
+      "score": 55,
+      "wouldUse": "Unsure",
+      "reasoning": "Sienna's commitment to the app relies heavily on the optional exclusion of weight and calorie metrics. If the UI forces these metrics, she will churn.",
+      "evidence": "Goal: 'Customize dashboard to hide weight and calorie metrics'."
+    },
+    {
+      "personaId": "p-5-1715783205",
+      "personaName": "Jordan Taylor",
+      "score": 40,
+      "wouldUse": "Probably No",
+      "reasoning": "As a hesitant beginner who wants simple daily walks without navigating complex tutorial videos, any overhead in product complexity will prevent adoption.",
+      "evidence": "Goal: 'Navigate the application easily without needing a tutorial video'."
+    }
+  ],
+  "keyInsights": [
+    {
+      "insight": "Divergent audience mentalities require modular, widget-based dashboard design rather than a one-size-fits-all metric layout.",
+      "evidence": "Mindful Minimalists (Sienna Brooks) and Optimizers (Zoe Kowalski) have entirely opposing views on what metrics should be central, necessitating user-controlled dashboard configuration.",
+      "confidence": "High"
+    },
+    {
+      "insight": "Integrating with standard productivity and entertainment applications is a critical driver for daily user retention.",
+      "evidence": "Mateo Silva wants to sync with Google Calendar, while Liam Chen and Jordan Kim seek playlist integration directly within tracking workflows.",
+      "confidence": "High"
+    }
+  ],
+  "productRecommendations": [
+    "Develop a fully modular dashboard interface that permits users to toggle the visibility of specific biometric metrics, specifically allowing the hiding of calorie and weight parameters.",
+    "Prioritize API integrations for automated passive logging (e.g., sleep trackers and step counts) to satisfy users demanding rapid or automated data entry.",
+    "Build clean, stylized infographic export options tailored for social channels like Instagram, TikTok, and Snapchat to capture the Aesthetic Tracker segments."
+  ],
+  "finalSummary": {
+    "liked": "Recovery score correlations (HRV/sleep), low-friction background tracking, and clean visual aesthetic layouts.",
+    "disliked": "Heavy manual data logging steps, rigid display of potential anxiety-inducing metrics like calorie goals, and high battery consumption.",
+    "adoptionBarriers": "Complex onboarding requirements or tutorials that alienate hesitant beginners, and rigid metric interfaces that alienate mindful users.",
+    "opportunities": "Customizable, modular home screens with third-party calendar and playlist integrations to position the product as a seamless lifestyle accessory.",
+    "conclusion": "Validation is highly positive for Optimizers and Aesthetic Sharers, but product success hinges on implementing modular dashboard personalization to avoid alienating the Mindful user segments."
+  },
+  "stats": {
+    "numPersonas": 15,
+    "numSurveyQuestions": 0,
+    "numSurveyResponses": 0,
+    "numInterviewSessions": 3,
+    "numInterviewMessages": 10
+  },
+  "reportData": {
+    "personas": [
+      {
+        "id": "p-1-1712010101",
+        "name": "Chloe Chen",
+        "age": 21,
+        "gender": "Female",
+        "occupation": "University Student (Marketing)",
+        "archetype": "Aesthetic Tracker",
+        "archetypeDesc": "Uses fitness apps primarily to support her lifestyle and look good on social media, prioritizing visual design over deep metrics.",
+        "quote": "I just want an app that looks pretty and tells me if I hit my daily step goal without draining my phone battery.",
+        "bio": "Chloe is a busy college junior balancing classes, an internship, and a social life. She wants to stay active to manage stress and stay fit, but she doesn't want to spend hours analyzing workout data.",
+        "painPoints": [
+          "Clunky and outdated user interfaces",
+          "Intrusive ads on free versions",
+          "Manual entry requirements for workouts"
+        ],
+        "goals": [
+          "Track daily steps easily",
+          "Log hydration levels quickly",
+          "Find visually aesthetic workout summaries to share on Instagram"
+        ],
+        "demographics": {
+          "location": "Austin, TX",
+          "education": "In College (Bachelor's)",
+          "income": "$15,000/year (Part-time)"
+        },
+        "buyingBehaviour": "Early adopter. Eager to purchase new technologies and try new features first.",
+        "technologyUsage": "Traditional office ecosystem (Excel, Email). Prefers minimal external software.",
+        "rating": 5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/27.jpg"
+      },
+      {
+        "id": "p-2-1712010102",
+        "name": "Marcus Vance",
+        "age": 23,
+        "gender": "Male",
+        "occupation": "Software Engineer",
+        "archetype": "Data Analyst",
+        "archetypeDesc": "Craves raw metrics, integrations, and deep insights about performance, heart rate zones, and sleep quality.",
+        "quote": "If the app can't export my heart rate data to a CSV or integrate with my smart scale, it's useless to me.",
+        "bio": "Marcus is a recent computer science graduate who is passionate about biohacking and optimizing his physical performance. He trains 5 days a week and uses multiple wearables to track his progress.",
+        "painPoints": [
+          "Inaccurate GPS tracking during outdoor runs",
+          "Lack of raw data export options",
+          "Incompatible integrations between different wearable brands"
+        ],
+        "goals": [
+          "Monitor heart rate zones in real-time",
+          "Correlate sleep quality with workout performance",
+          "Analyze long-term fitness trends with granular data"
+        ],
+        "demographics": {
+          "location": "San Francisco, CA",
+          "education": "Bachelor's Degree",
+          "income": "$95,000/year"
+        },
+        "buyingBehaviour": "Early adopter. Eager to purchase new technologies and try new features first.",
+        "technologyUsage": "Traditional office ecosystem (Excel, Email). Prefers minimal external software.",
+        "rating": 5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/32.jpg"
+      },
+      {
+        "id": "p-3-1712010103",
+        "name": "Liam O'Connor",
+        "age": 19,
+        "gender": "Male",
+        "occupation": "College Student (Business)",
+        "archetype": "Gamified Competitor",
+        "archetypeDesc": "Motivated by rewards, streaks, and competing directly with friends on leaderboards.",
+        "quote": "I only worked out today because my buddy beat my score on the weekly leaderboard, and I couldn't let that slide.",
+        "bio": "Liam is a competitive college sophomore who plays club soccer. He relies heavily on social validation and playful competition to keep himself motivated during the off-season.",
+        "painPoints": [
+          "Lack of engaging social features or challenge modes",
+          "Difficult process to add and find friends within the app",
+          "Uninspiring achievement badges"
+        ],
+        "goals": [
+          "Compete in weekly step and calorie challenges with friends",
+          "Earn virtual rewards and level up his fitness profile",
+          "Easily share achievements to Snapchat and TikTok"
+        ],
+        "demographics": {
+          "location": "Boston, MA",
+          "education": "In College",
+          "income": "$12,000/year"
+        },
+        "buyingBehaviour": "Budget-conscious decision maker. Prefers flexible tier structures and clear discount policies.",
+        "technologyUsage": "Developer-centric environment. High usage of command line, APIs, and GitHub.",
+        "rating": 4.7,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/54.jpg"
+      },
+      {
+        "id": "p-4-1712010104",
+        "name": "Sienna Brooks",
+        "age": 24,
+        "gender": "Female",
+        "occupation": "Graphic Designer",
+        "archetype": "Mindful Minimalist",
+        "archetypeDesc": "Focuses on mental health, gentle movement, and yoga, avoiding intense metrics that feel stressful.",
+        "quote": "I hate apps that make me feel guilty for missing a day. I want a tracker that promotes balance, not obsession.",
+        "bio": "Sienna works remotely as a designer and uses yoga and walking to decompress. She is highly sensitive to digital fatigue and prefers apps with calming UI designs and mindful features.",
+        "painPoints": [
+          "Aggressive push notifications shame-tripping her to work out",
+          "Overwhelming data screens with too many numbers",
+          "Lack of focus on mental wellness and recovery days"
+        ],
+        "goals": [
+          "Track daily mindful movement and meditation sessions",
+          "Receive gentle, positive encouragement",
+          "Customize dashboard to hide weight and calorie metrics"
+        ],
+        "demographics": {
+          "location": "Portland, OR",
+          "education": "Bachelor's Degree",
+          "income": "$48,000/year"
+        },
+        "buyingBehaviour": "Value-driven buyer. Focused on ROI, efficiency, and long-term cost benefits.",
+        "technologyUsage": "Mobile-first workflow. Dependent on notifications and cross-device sync.",
+        "rating": 4.8,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/26.jpg"
+      },
+      {
+        "id": "p-5-1712010105",
+        "name": "Jordan Kim",
+        "age": 22,
+        "gender": "Non-binary",
+        "occupation": "Freelance Content Creator",
+        "archetype": "Trend Follower",
+        "archetypeDesc": "Uses whatever fitness apps and routines are currently viral, valuing aesthetics and community buzz.",
+        "quote": "I want an app that has trendy pre-made workouts and lets me curate my aesthetic workout logs easily.",
+        "bio": "Jordan is a Gen Z creator who documents their daily lifestyle. They love trying new aesthetic routines, pilates challenges, and viral fitness trends, needing tools that keep up with fast-moving trends.",
+        "painPoints": [
+          "Rigid workout templates that can't be customized on the fly",
+          "No integration with music streaming platforms inside the app",
+          "Ugly, text-heavy data representation"
+        ],
+        "goals": [
+          "Access fresh, trending workout routines",
+          "Share highly visual summaries of workouts",
+          "Curate custom workout playlists seamlessly within the app"
+        ],
+        "demographics": {
+          "location": "Los Angeles, CA",
+          "education": "Some College",
+          "income": "$35,000/year"
+        },
+        "buyingBehaviour": "Convenience seeker. Prioritizes quick integration, setup speed, and user experience.",
+        "technologyUsage": "Multi-device professional (Mac, iPad, iPhone). Values ecosystem integration.",
+        "rating": 4.2,
+        "decision": "No",
+        "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Jordan%20Kim"
+      },
+      {
+        "id": "p-6-1712010106",
+        "name": "Amara Adebayo",
+        "age": 20,
+        "gender": "Female",
+        "occupation": "Nursing Student",
+        "archetype": "Pragmatic Improver",
+        "archetypeDesc": "Needs high-utility, free features to manage physical health amidst an extremely erratic and exhausting schedule.",
+        "quote": "Between night shifts and lectures, my sleep and exercise are all over the place. I need an app that adapts to my messy schedule.",
+        "bio": "Amara is a busy nursing student who spends long hours on her feet. She wants to track her sleep quality and daily steps to ensure she isn't burning out, but needs the app to require zero effort.",
+        "painPoints": [
+          "Paywalls blocking basic features like sleep analysis",
+          "Apps that assume a standard 9-to-5 sleep and exercise schedule",
+          "Battery drain while running background tracking"
+        ],
+        "goals": [
+          "Automate activity and sleep tracking without manual logs",
+          "Understand how irregular shifts affect physical recovery",
+          "Access free, high-quality core metrics"
+        ],
+        "demographics": {
+          "location": "Chicago, IL",
+          "education": "In College (Associate's)",
+          "income": "$18,000/year"
+        },
+        "buyingBehaviour": "Value-driven buyer. Focused on ROI, efficiency, and long-term cost benefits.",
+        "technologyUsage": "Mobile-first workflow. Dependent on notifications and cross-device sync.",
+        "rating": 4.8,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/71.jpg"
+      },
+      {
+        "id": "p-7-1712010107",
+        "name": "Mateo Silva",
+        "age": 25,
+        "gender": "Male",
+        "occupation": "Sales Representative",
+        "archetype": "The Optimizer",
+        "archetypeDesc": "Uses fitness tracking as a tool to maximize daily efficiency, energy levels, and overall productivity.",
+        "quote": "If I track my workouts, hydration, and nutrition, I can maintain peak energy levels for my sales calls.",
+        "bio": "Mateo is an energetic sales rep who treats his body like a machine. He uses fitness tracking to maintain high energy levels and discipline, seeing physical health as directly tied to his career success.",
+        "painPoints": [
+          "Wasting time navigating complex submenus to log a quick meal",
+          "Lack of actionable advice on how to improve recovery",
+          "No calendar integration to schedule workouts"
+        ],
+        "goals": [
+          "Log nutrition, water, and exercise in under two minutes daily",
+          "Get clear recommendations on daily recovery and readiness score",
+          "Sync workout scheduling with Google Calendar"
+        ],
+        "demographics": {
+          "location": "Miami, FL",
+          "education": "Bachelor's Degree",
+          "income": "$60,000/year"
+        },
+        "buyingBehaviour": "Value-driven buyer. Focused on ROI, efficiency, and long-term cost benefits.",
+        "technologyUsage": "Mobile-first workflow. Dependent on notifications and cross-device sync.",
+        "rating": 4.8,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/21.jpg"
+      },
+      {
+        "id": "p-8-1712010108",
+        "name": "Elena Rostova",
+        "age": 18,
+        "gender": "Female",
+        "occupation": "High School Senior",
+        "archetype": "Budget Beginner",
+        "archetypeDesc": "New to fitness tracking, looking for free, simple guidance without committing to expensive hardware or premium subscriptions.",
+        "quote": "I don't have an Apple Watch or Fitbit. I just want an app that tracks my runs using my phone's GPS for free.",
+        "bio": "Elena is starting college soon and wants to build healthier habits. She is new to running and wants a simple, free way to see how far and fast she runs without buying expensive accessories.",
+        "painPoints": [
+          "App requiring a connected wearable to work properly",
+          "Constant prompts to upgrade to 'Premium' to see basic stats",
+          "Overwhelming interface designed for pro athletes"
+        ],
+        "goals": [
+          "Track running distance and pace using only her phone",
+          "Access simple couch-to-5k style guides",
+          "Build a consistent daily movement habit"
+        ],
+        "demographics": {
+          "location": "Denver, CO",
+          "education": "High School Graduate",
+          "income": "$8,000/year (Part-time)"
+        },
+        "buyingBehaviour": "Convenience seeker. Prioritizes quick integration, setup speed, and user experience.",
+        "technologyUsage": "Multi-device professional (Mac, iPad, iPhone). Values ecosystem integration.",
+        "rating": 4.2,
+        "decision": "No",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/33.jpg"
+      },
+      {
+        "id": "p-9-1712010109",
+        "name": "Tyler Jenkins",
+        "age": 22,
+        "gender": "Male",
+        "occupation": "Gym Instructor",
+        "archetype": "The Coach",
+        "archetypeDesc": "Uses trackers to monitor his own workouts and seeks features that allow him to coordinate or share routines with clients.",
+        "quote": "I want to design a workout routine in the app and easily share it with my clients or friends so we can all follow it.",
+        "bio": "Tyler is a certified personal trainer and fitness enthusiast. He lives in the gym and wants an app that acts as an advanced digital logbook where he can build, execute, and share highly custom lifting routines.",
+        "painPoints": [
+          "Inability to customize exercise databases with obscure lift variations",
+          "Rigid timers that don't allow flexible rest periods between sets",
+          "Poor UI for tracking progression of weights and reps over time"
+        ],
+        "goals": [
+          "Create and save complex, custom weightlifting templates",
+          "Track historical progression of 1RM (One-Rep Max) for compound lifts",
+          "Share workout routines easily with a single link"
+        ],
+        "demographics": {
+          "location": "Atlanta, GA",
+          "education": "Some College / Certifications",
+          "income": "$32,000/year"
+        },
+        "buyingBehaviour": "Research-heavy consumer. Relies on reviews and case studies before purchase.",
+        "technologyUsage": "Heavy user of SaaS tools (Notion, Slack, Jira). Prefers web apps.",
+        "rating": 4.5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/10.jpg"
+      },
+      {
+        "id": "p-10-1712010110",
+        "name": "Maya Patel",
+        "age": 23,
+        "gender": "Female",
+        "occupation": "Physical Therapy Assistant",
+        "archetype": "Rehab & Safety First",
+        "archetypeDesc": "Focuses on injury prevention, correct posture, and rehabilitation progress rather than pushing past physical limits.",
+        "quote": "My focus is recovering safely. I need an app that prevents me from overexerting myself and tracks my mobility work.",
+        "bio": "Maya works in physical therapy and recently recovered from a knee injury herself. She treats fitness tracking as a tool for physical maintenance, safety, and rehabilitation rather than extreme performance.",
+        "painPoints": [
+          "Apps that push 'no pain, no gain' messaging",
+          "Lack of options to log physical therapy or mobility exercises",
+          "Inability to set max heart rate warnings to prevent overexertion"
+        ],
+        "goals": [
+          "Log stretching, mobility, and physical therapy sessions",
+          "Set strict alerts to prevent overtraining or high-impact stress",
+          "Track daily pain levels alongside physical activity"
+        ],
+        "demographics": {
+          "location": "Seattle, WA",
+          "education": "Associate's Degree",
+          "income": "$42,000/year"
+        },
+        "buyingBehaviour": "Research-heavy consumer. Relies on reviews and case studies before purchase.",
+        "technologyUsage": "Heavy user of SaaS tools (Notion, Slack, Jira). Prefers web apps.",
+        "rating": 4.5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/50.jpg"
+      },
+      {
+        "id": "p-1-1715783201",
+        "name": "Liam Chen",
+        "age": 21,
+        "gender": "Male",
+        "occupation": "Graphic Design Student",
+        "archetype": "Aesthetic Motivated",
+        "archetypeDesc": "Needs visual rewards and clean UI design to stay engaged; easily demotivated by cluttered charts.",
+        "quote": "If the app doesn't look good and make tracking feel like a game, I'll delete it in two days.",
+        "bio": "Liam is a senior design student who loves staying active but struggles with consistency. He wants to track his daily steps and light workouts without being overwhelmed by dense health data.",
+        "painPoints": [
+          "Cluttered and complex user interfaces that feel like a math test",
+          "Lack of visual milestones or satisfying celebrations of progress",
+          "Manual inputting of data feels tedious"
+        ],
+        "goals": [
+          "Build a consistent workout routine using gamified challenges",
+          "Visually track progress through clean, shareable infographics",
+          "Integrate step tracking with background playlist apps"
+        ],
+        "demographics": {
+          "location": "San Francisco, CA",
+          "education": "In College (BFA in Graphic Design)",
+          "income": "$15,000/year (Part-time)"
+        },
+        "buyingBehaviour": "Value-driven buyer. Focused on ROI, efficiency, and long-term cost benefits.",
+        "technologyUsage": "Mobile-first workflow. Dependent on notifications and cross-device sync.",
+        "rating": 4.8,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/81.jpg"
+      },
+      {
+        "id": "p-2-1715783202",
+        "name": "Zoe Kowalski",
+        "age": 23,
+        "gender": "Female",
+        "occupation": "Software Engineer",
+        "archetype": "Optimizer",
+        "archetypeDesc": "Constantly seeks optimization in sleep, nutrition, and heart rate metrics, demanding deep integration and accurate data.",
+        "quote": "I want raw data export and real-time heart rate zones, not just a generic 'good job' message.",
+        "bio": "Recently graduated and working in tech, Zoe approaches fitness like debugging code. She tracks everything from HRV to sleep cycles to optimize her daily productivity and physical performance.",
+        "painPoints": [
+          "Inability to export raw data or sync with secondary specialized sensors",
+          "Over-simplified health metrics that hide the underlying science",
+          "Inaccurate automatic sleep tracking algorithms"
+        ],
+        "goals": [
+          "Correlate daily workout intensity with sleep recovery scores",
+          "Customize dashboard widgets to prioritize specific biometric data",
+          "Optimize recovery time to avoid burnout"
+        ],
+        "demographics": {
+          "location": "Seattle, WA",
+          "education": "Bachelor's in Computer Science",
+          "income": "$85,000/year"
+        },
+        "buyingBehaviour": "Research-heavy consumer. Relies on reviews and case studies before purchase.",
+        "technologyUsage": "Heavy user of SaaS tools (Notion, Slack, Jira). Prefers web apps.",
+        "rating": 4.5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/95.jpg"
+      },
+      {
+        "id": "p-3-1715783203",
+        "name": "Marcus Johnson",
+        "age": 19,
+        "gender": "Male",
+        "occupation": "College Athlete (Track & Field)",
+        "archetype": "Social Competitor",
+        "archetypeDesc": "Motivated primarily by peer competition, sharing workouts, and climbing leaderboards on a budget.",
+        "quote": "If my friends aren't on the app, and I can't compare stats, I won't use it.",
+        "bio": "A sophomore running track who wants to stay connected with teammates and friends back home. He relies heavily on free apps and community-driven features to stay motivated during the off-season.",
+        "painPoints": [
+          "Crucial social and sharing features locked behind an expensive premium paywall",
+          "Difficulty connecting with friends on different mobile operating systems",
+          "Heavy battery drain during long GPS tracking sessions"
+        ],
+        "goals": [
+          "Compete in weekly distance challenges with friends",
+          "Share run routes easily to external social media platforms",
+          "Find an app that runs efficiently in the background without draining battery"
+        ],
+        "demographics": {
+          "location": "Austin, TX",
+          "education": "Undergraduate",
+          "income": "$8,000/year (Stipend/Part-time)"
+        },
+        "buyingBehaviour": "Value-driven buyer. Focused on ROI, efficiency, and long-term cost benefits.",
+        "technologyUsage": "Mobile-first workflow. Dependent on notifications and cross-device sync.",
+        "rating": 4.8,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/men/86.jpg"
+      },
+      {
+        "id": "p-4-1715783204",
+        "name": "Chloe Patel",
+        "age": 25,
+        "gender": "Female",
+        "occupation": "Marketing Coordinator",
+        "archetype": "Mindful Pragmatist",
+        "archetypeDesc": "Looks for a holistic approach to fitness that balances mental health and active recovery, highly skeptical of intense grind cultures.",
+        "quote": "Most fitness apps make me feel guilty for resting. I need an app that understands mental health is part of fitness.",
+        "bio": "Chloe works in a high-stress marketing role and uses fitness primarily for stress relief rather than physical gains. She values meditation, yoga, and intuitive movement over raw calorie counting.",
+        "painPoints": [
+          "Aggressive notifications and guilt-inducing daily streak systems",
+          "Hyper-focus on calorie tracking and weight loss metrics over overall wellness",
+          "Lack of integration with mental wellness or meditation tools"
+        ],
+        "goals": [
+          "Track physical activity without triggering anxiety or negative self-talk",
+          "Log yoga and mindfulness sessions alongside low-impact cardio",
+          "Receive gentle, positive nudges to move throughout a sedentary desk workday"
+        ],
+        "demographics": {
+          "location": "Chicago, IL",
+          "education": "Bachelor's in Communications",
+          "income": "$52,000/year"
+        },
+        "buyingBehaviour": "Research-heavy consumer. Relies on reviews and case studies before purchase.",
+        "technologyUsage": "Heavy user of SaaS tools (Notion, Slack, Jira). Prefers web apps.",
+        "rating": 4.5,
+        "decision": "Yes",
+        "avatarUrl": "https://randomuser.me/api/portraits/women/5.jpg"
+      },
+      {
+        "id": "p-5-1715783205",
+        "name": "Jordan Taylor",
+        "age": 22,
+        "gender": "Non-binary",
+        "occupation": "Barista",
+        "archetype": "Hesitant Beginner",
+        "archetypeDesc": "Easily overwhelmed by fitness jargon and complex setups; needs highly intuitive, step-by-step guidance to build new habits.",
+        "quote": "I just want to build a simple habit of moving more, but these apps expect me to know what 'VO2 Max' means.",
+        "bio": "Jordan wants to improve their physical stamina for long, standing shifts at work. Having never used a fitness tracker before, they need an accessible, shame-free entry point to build basic healthy habits.",
+        "painPoints": [
+          "Confronting confusing fitness terminology with no context or explanations",
+          "Steep learning curves and overwhelming setup flows during initial app launch",
+          "Feeling discouraged by unrealistic default daily activity goals"
+        ],
+        "goals": [
+          "Establish a basic, manageable routine of 15-minute daily walks",
+          "Learn how simple habits contribute to overall energy levels during shifts",
+          "Navigate the application easily without needing a tutorial video"
+        ],
+        "demographics": {
+          "location": "Portland, OR",
+          "education": "Associate Degree",
+          "income": "$28,000/year"
+        },
+        "buyingBehaviour": "Budget-conscious decision maker. Prefers flexible tier structures and clear discount policies.",
+        "technologyUsage": "Developer-centric environment. High usage of command line, APIs, and GitHub.",
+        "rating": 4.7,
+        "decision": "Yes",
+        "avatarUrl": "https://api.dicebear.com/7.x/initials/svg?seed=Jordan%20Taylor"
+      }
+    ],
+    "surveyResults": [],
+    "interviewMemories": {
+      "p-1-1715000001": {
+        "history": [
+          {
+            "role": "user",
+            "text": "hi alex"
+          },
+          {
+            "role": "model",
+            "text": "Hey! How's it going? Just taking a quick break between code pushes to check my energy metrics for the day. What are you up to?"
+          },
+          {
+            "role": "user",
+            "text": "what are you doing now"
+          },
+          {
+            "role": "model",
+            "text": "Right now, I'm just analyzing my HRV and sleep data from last night against my focus scores today to see how my afternoon energy is holding up. Trying to optimize my routines so I can stay sharp through this evening's code review. What are you working on today?"
+          },
+          {
+            "role": "user",
+            "text": "i have a doubt"
+          },
+          {
+            "role": "model",
+            "text": "Fire away! What's on your mind? Whether it's about tech, health tracking, or something else entirely, I'm happy to help you figure it out."
+          }
+        ],
+        "dynamicContext": {
+          "user_name": null,
+          "notes": "User mentioned having a doubt or question."
+        }
+      },
+      "p-2-1710000002": {
+        "history": [
+          {
+            "role": "user",
+            "text": "hi, how are you"
+          },
+          {
+            "role": "model",
+            "text": "Hi there! I'm doing well, just taking a quick break between team meetings and trying to get my weekly schedules in order. How are you doing today?"
+          }
+        ],
+        "dynamicContext": {
+          "user_name": null,
+          "notes": "User initiated conversation with a standard greeting."
+        }
+      },
+      "p-3-1711800003": {
+        "history": [
+          {
+            "role": "user",
+            "text": "hi, today manager will manage the product"
+          },
+          {
+            "role": "model",
+            "text": "Sounds like a high-stakes day. Whenever I'm steering a product sprint, my focus is strictly on running rapid experiments and optimizing our funnel metrics before wasting engineering bandwidth. What specific growth levers or features are you planning to test today?"
+          }
+        ],
+        "dynamicContext": {
+          "user_name": null,
+          "notes": "User mentioned managing a product today."
+        }
+      }
+    }
+  }
+}
